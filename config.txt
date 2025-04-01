@@ -1,0 +1,19 @@
+Split-window -v
+Select-pane -t 0
+Select-pane -t 1
+Resize -U 18
+
+
+
+Bt -h -P -p 25 -t 0
+Di -h -P -p 25 -f -t 0
+Re -h -P -p 60 -t {di[0]}
+-v -P -p 35 -t re
+
+Set
+Dereference-limit 4
+Telescope-lines 5
+Context-code-lines 50
+Show-retaddr-reg on
+Show-flags on
+Context-stack-lines 15
